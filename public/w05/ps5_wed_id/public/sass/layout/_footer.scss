@@ -1,0 +1,75 @@
+.site-footer {
+    color: $color-white;
+    padding: 7.5rem 0;
+    background: $color-sony-blue;
+
+    .content-grid {
+        margin-block-end: 0rem;
+    }
+
+    &__brand-area {
+        grid-area: 1/1/1/7;
+        //gris-area: <row-start> / <column-start> / <row-end> / <column-end>
+
+        img {
+            width: 9rem;
+            display: block;
+            position: relative;
+            margin-block-end: 3.5rem;
+        }
+
+        li {
+            list-style: none;
+            margin-block-end: .5rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__categories {
+
+        &:nth-child(2) {
+            grid-area: 1/7/auto/9;
+        }
+
+        &:nth-child(3) {
+            grid-area: 1/9/auto/11;
+        }
+
+        &:nth-child(4) {
+            grid-area: 1/11/auto/13;
+        }
+
+        li {
+            list-style: none;
+            margin-block-end: 1rem;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+                font-weight: 300;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__badges{
+        grid-area: 2/7/auto/13;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    } 
+
+    &__legal {
+        grid-area: 2/1/auto/7;
+
+        img {
+            width: 13rem;
+            margin-block-end: 1rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+}

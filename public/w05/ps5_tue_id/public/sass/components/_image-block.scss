@@ -1,0 +1,23 @@
+.image-block {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+
+    .icon {
+        &__1 {
+            width: 20%;
+            margin: auto;
+        }
+    }
+
+    &__logo {
+        
+        img {
+            width: 60%;
+        }
+    }
+}
+

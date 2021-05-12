@@ -1,0 +1,26 @@
+.button {
+    width: 100%;
+    padding: 1rem 0;
+
+    &_white {
+        box-sizing: border-box;
+        margin: auto;
+        width: 11rem;
+        display: block;
+        background: $color-white;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 3rem;
+    }
+
+    &_text {
+        text-decoration: none;
+
+        &--white {
+            color: $color-black;
+            font-family: "LiHei Pro Light", sans-serif;
+            font-size: 1.8rem;
+        }
+    }
+}

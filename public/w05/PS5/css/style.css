@@ -1,0 +1,411 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  font-family: "SST",helvetica,arial,sans-serif; }
+
+main {
+  position: relative;
+  top: 6rem; }
+
+.title-primary {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+  .title-primary h1 {
+    font-size: 6rem;
+    font-weight: 300; }
+  .title-primary__left {
+    color: #fff;
+    text-align: left;
+    padding: 3rem 0; }
+    .title-primary__left h1 {
+      font-size: 5rem;
+      font-weight: 300; }
+
+.title-secondary {
+  padding: 2rem 0;
+  text-align: center; }
+  .title-secondary h1 {
+    font-size: 4rem;
+    font-weight: 100; }
+
+.title-tertiary {
+  text-align: center; }
+  .title-tertiary h1 {
+    font-size: 2.5rem;
+    font-weight: 300; }
+
+.paragraph {
+  display: block;
+  width: 100%; }
+  .paragraph__primary {
+    text-align: center;
+    max-width: calc(560px * 1.8);
+    margin: auto; }
+    .paragraph__primary p {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 3rem; }
+  .paragraph__secondary {
+    text-align: center;
+    max-width: calc(560px * 1.8);
+    margin: auto;
+    margin-bottom: 8rem;
+    margin-top: 1.5rem; }
+    .paragraph__secondary p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 3rem; }
+    .paragraph__secondary span {
+      font-size: 1.3rem;
+      font-weight: 300; }
+
+@media screen and (max-width: 102.4rem) {
+  .title-primary h1 {
+    font-size: 5rem; }
+  .title-secondary h1 {
+    font-size: 4rem; }
+  .paragraph__primary p {
+    font-size: 2rem; }
+  .paragraph__secondary {
+    max-width: calc(560px * 1.1); } }
+
+.content-grid {
+  display: grid;
+  grid-row-gap: 3rem;
+  margin-block-end: 4.8rem;
+  -webkit-margin-after: 4.8rem;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1rem;
+  max-width: 156.4rem;
+  -webkit-margin-start: auto;
+  -moz-margin-start: auto;
+  margin-inline-start: auto;
+  -webkit-margin-end: auto;
+  -moz-margin-end: auto;
+  margin-inline-end: auto;
+  height: 100%; }
+
+.grid-layout__1 {
+  grid-column-start: 3;
+  grid-column-end: 11; }
+
+.grid-layout__2 {
+  grid-template-columns: 1fr 1fr; }
+
+.grid-layout__4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.grid-layout__5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+@media screen and (max-width: 192rem) {
+  .content-grid {
+    max-width: 154.6rem; } }
+
+@media screen and (max-width: 144rem) {
+  .content-grid {
+    max-width: 132rem; } }
+
+.mb__xs {
+  margin-block-end: .5rem !important;
+  -webkit-margin-after: .5rem !important; }
+
+.mb__s {
+  margin-block-end: 1rem !important;
+  -webkit-margin-after: 1.5rem !important; }
+
+.button {
+  width: 100%;
+  padding: 1rem 0; }
+  .button_white {
+    box-sizing: border-box;
+    margin: auto;
+    width: 11rem;
+    display: block;
+    background: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3rem; }
+  .button_text {
+    text-decoration: none; }
+    .button_text--white {
+      color: #000;
+      font-family: "LiHei Pro Light", sans-serif;
+      font-size: 1.8rem; }
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+
+.video-block {
+  display: flex;
+  justify-content: center; }
+  .video-block__1 {
+    width: calc(560px * 1.8);
+    height: calc(315px * 1.8); }
+  .video-block__4 {
+    width: calc(560px / 1.5);
+    height: calc(315px / 1.5); }
+
+@media screen and (max-width: 102.4rem) {
+  .video-block__1 {
+    width: calc(560px * 1.1);
+    height: calc(315px * 1.1); }
+  .video-block__4 {
+    width: calc(560px / 2.8);
+    height: calc(315px / 2.8); } }
+
+@media screen and (max-width: 144rem) {
+  .video-block__1 {
+    width: calc(560px * 1.5);
+    height: calc(315px * 1.5); }
+  .video-block__4 {
+    width: calc(560px / 1.9);
+    height: calc(315px / 1.9); } }
+
+.image-block {
+  display: flex;
+  flex-direction: column; }
+  .image-block img {
+    width: 100%; }
+  .image-block .icon__1 {
+    width: 20%;
+    margin: auto; }
+  .image-block__logo img {
+    width: 60%; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background: #fff;
+  font-family: "SST",helvetica,arial,sans-serif;
+  font-weight: 300;
+  z-index: 9000; }
+  .nav_bar {
+    display: flex;
+    min-width: 32rem; }
+  .nav_logo-box img {
+    width: 20rem;
+    margin-left: 2rem;
+    margin-top: .5rem; }
+  .nav_list-box {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .nav_list {
+    display: flex;
+    justify-content: space-between; }
+  .nav_item {
+    display: block;
+    list-style: none;
+    font-size: 1.6rem; }
+    .nav_item--link {
+      text-decoration: none;
+      color: #000;
+      height: 6rem;
+      padding: 0 1.6rem;
+      display: flex;
+      align-items: center; }
+    .nav_item--link-selected {
+      text-decoration: none;
+      color: #00439c;
+      font-weight: 300;
+      height: 6rem;
+      padding: 0 1.6rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 4px solid #00439c; }
+
+.banner {
+  position: relative;
+  display: block; }
+  .banner_box {
+    width: 100%;
+    height: 72vh;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: 43% 10%; }
+  .banner_box--g {
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, transparent 50%), url(../img/demons_souls.jpeg);
+    background-size: cover; }
+  .banner_text-box {
+    margin: auto;
+    max-width: 132rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center; }
+    .banner_text-box--g {
+      margin: auto;
+      max-width: 192rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-start;
+      justify-content: center; }
+    .banner_text-box--logo {
+      max-width: calc((73.33px*5) + (4*2.5rem));
+      width: 100%; }
+      .banner_text-box--logo img {
+        display: block;
+        width: calc((73.33px*2) + (1*5rem));
+        margin: auto; }
+      .banner_text-box--logo-L img {
+        display: block;
+        width: 30%; }
+    .banner_text-box--content {
+      max-width: calc((73.33px*5) + (4*2.5rem));
+      width: 100%; }
+
+@media screen and (max-width: 102.4rem) {
+  .banner_box {
+    height: 53vh; }
+  .banner_text-box {
+    max-width: 88.6rem; }
+    .banner_text-box--logo {
+      padding: 1rem 0; }
+      .banner_text-box--logo img {
+        width: calc((37.16px*2) + (2*2.5rem)); } }
+
+@media screen and (max-width: 76.8rem) {
+  .banner_box {
+    height: 53vh; }
+  .banner_text-box {
+    max-width: 62rem; }
+    .banner_text-box--logo {
+      padding: 1rem 0; }
+      .banner_text-box--logo img {
+        width: calc((37.16px*2) + (2*2.5rem)); } }
+
+@media screen and (max-width: 144rem) {
+  .banner_box {
+    height: 65vh; }
+  .banner_text-box {
+    max-width: 132rem; }
+    .banner_text-box--logo {
+      padding: 1rem 0; }
+      .banner_text-box--logo img {
+        width: calc((37.16px*2) + (2*2.5rem)); } }
+
+@media screen and (max-width: 192rem) {
+  .banner_box {
+    height: 70vh; } }
+
+.highlight {
+  background-color: #eee;
+  width: 100%;
+  position: relative;
+  padding-block-start: 3.5rem;
+  -webkit-padding-before: 3.5rem; }
+
+.speed {
+  width: 100%; }
+
+.category {
+  max-width: 156.4rem;
+  height: 50vh;
+  margin: auto; }
+  .category__block {
+    margin: 10rem 0;
+    display: block;
+    width: 100%;
+    height: calc(156.4rem / 5 - 1rem);
+    text-decoration: none; }
+    .category__block--act {
+      background: url(../img/game/tsushima.webp), rgba(54, 54, 54, 0.9);
+      background-size: cover;
+      background-blend-mode: multiply; }
+    .category__block--sport {
+      background: url(../img/game/2k21.webp), rgba(54, 54, 54, 0.9);
+      background-size: cover;
+      background-blend-mode: multiply; }
+    .category__block--horror {
+      background: url(../img/game/resident_evil_8.webp), rgba(54, 54, 54, 0.9);
+      background-size: cover;
+      background-blend-mode: multiply; }
+    .category__block--shoot {
+      background: url(../img/game/COD.webp), rgba(54, 54, 54, 0.9);
+      background-size: cover;
+      background-blend-mode: multiply; }
+    .category__block--multi {
+      background: url(../img/game/fall_guys.webp), rgba(54, 54, 54, 0.9);
+      background-size: cover;
+      background-blend-mode: multiply; }
+
+@media screen and (max-width: 192rem) {
+  .category__block {
+    height: calc(156rem / 5 - 1rem); } }
+
+@media screen and (max-width: 144rem) {
+  .category__block {
+    height: calc(132rem / 5 - 1rem); } }
+
+@media screen and (max-width: 102.4rem) {
+  .category__block {
+    height: calc(86.6rem / 5 - 1rem); } }
+
+.site-footer {
+  color: #fff;
+  padding: 7.5rem 0;
+  background: #00439c; }
+  .site-footer .content-grid {
+    margin-block-end: 0rem; }
+  .site-footer__brand-area {
+    grid-area: 1/1/1/7; }
+    .site-footer__brand-area img {
+      width: 9rem;
+      display: block;
+      position: relative;
+      margin-block-end: 3.5rem; }
+    .site-footer__brand-area li {
+      list-style: none;
+      margin-block-end: .5rem;
+      font-weight: 300;
+      font-size: 1.5rem; }
+  .site-footer__categories:nth-child(2) {
+    grid-area: 1/7/auto/9; }
+  .site-footer__categories:nth-child(3) {
+    grid-area: 1/9/auto/11; }
+  .site-footer__categories:nth-child(4) {
+    grid-area: 1/11/auto/13; }
+  .site-footer__categories li {
+    list-style: none;
+    margin-block-end: 1rem; }
+    .site-footer__categories li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 300;
+      font-size: 1.5rem; }
+  .site-footer__badges {
+    grid-area: 2/7/auto/13;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .site-footer__legal {
+    grid-area: 2/1/auto/7; }
+    .site-footer__legal img {
+      width: 13rem;
+      margin-block-end: 1rem; }
+    .site-footer__legal p {
+      font-weight: 300;
+      font-size: 1.5rem; }

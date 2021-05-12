@@ -1,0 +1,63 @@
+.category {
+    max-width: 156.4rem;
+    height: 50vh;
+    margin: auto;
+
+    &__block {
+        margin: 10rem 0;
+        display: block;
+        width: 100%;
+        height: calc(156.4rem / 5 - 1rem);
+        text-decoration: none;
+
+        &--act {
+            background: url(../img/game/tsushima.webp), rgba($color-dark-grey, .9);
+            background-size: cover; 
+            background-blend-mode: multiply;
+        }
+        &--sport {
+            background: url(../img/game/2k21.webp), rgba($color-dark-grey, .9);
+            background-size: cover; 
+            background-blend-mode: multiply;
+        }
+        &--horror {
+            background: url(../img/game/resident_evil_8.webp), rgba($color-dark-grey, .9);
+            background-size: cover; 
+            background-blend-mode: multiply;
+        }
+        &--shoot {
+            background: url(../img/game/COD.webp), rgba($color-dark-grey, .9);
+            background-size: cover; 
+            background-blend-mode: multiply;
+        }
+        &--multi {
+            background: url(../img/game/fall_guys.webp), rgba($color-dark-grey, .9);
+            background-size: cover; 
+            background-blend-mode: multiply;
+        }
+    }
+}
+
+@media screen and (max-width: $X-large-screen) {
+    .category {
+        &__block {
+            height: calc(156rem / 5 - 1rem);
+        }
+    }
+}
+
+@media screen and (max-width: $Macbook-screen) {
+    .category {
+        &__block {
+            height: calc(132rem / 5 - 1rem);
+        }
+    }
+}
+
+@media screen and (max-width: $Large-screen) {
+    .category {
+        &__block {
+            height: calc(86.6rem / 5 - 1rem);
+        }
+    }
+}

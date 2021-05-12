@@ -1,0 +1,42 @@
+.video-block {
+    display: flex;
+    justify-content: center;
+
+    &__1{
+        width:calc(560px * 1.8);
+        height:calc(315px * 1.8);
+    }
+
+    &__4 {
+        width: calc(560px / 1.5);
+        height: calc(315px / 1.5);
+    }
+}
+
+@media screen and (max-width: $Large-screen) {
+    .video-block {
+        &__1{
+            width:calc(560px * 1.1);
+            height:calc(315px * 1.1);
+        }
+    
+        &__4 {
+            width: calc(560px / 2.8);
+            height: calc(315px / 2.8);
+        }
+    }
+}
+
+@media screen and (max-width: $Macbook-screen) {
+    .video-block {
+        &__1{
+            width:calc(560px * 1.5);
+            height:calc(315px * 1.5);
+        }
+    
+        &__4 {
+            width: calc(560px / 1.9);
+            height: calc(315px / 1.9);
+        }
+    }
+}

@@ -1,0 +1,39 @@
+const categories = [
+    {
+      id:1,
+      size:'',
+      name:'hats_53',
+      remote_url:'https://i.ibb.co/cvpntL1/hats.png',
+      local_url:'/img/homepage/hats.png'
+    },
+    {
+      id:2,
+      size:'',
+      name:'jackets_53',
+      remote_url:'https://i.ibb.co/px2tCc3/jackets.png',
+      local_url:'/img/homepage/jackets.png'
+    },
+    {
+      id:3,
+      size:'',
+      name:'sneakers_53',
+      remote_url:'https://i.ibb.co/0jqHpnp/sneakers.png',
+      local_url:'/img/homepage/sneakers.png'
+    },
+    {
+      id:4,
+      size:'large',
+      name:'womens_53',
+      remote_url:'https://i.ibb.co/GCCdy8t/womens.png',
+      local_url:'/img/homepage/womens.png'
+    },
+    {
+      id:5,
+      size:'large',
+      name:'mens_53',
+      remote_url:'https://i.ibb.co/R70vBrQ/men.png',
+      local_url:'/img/homepage/mens.png'
+    },
+];
+
+module.exports = categories;
